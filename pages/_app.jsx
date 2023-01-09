@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import Header from '../components/Header';
 import '../styles/globals.css';
+import Head from 'next/head';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -17,6 +18,9 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider enableSystem={true} attribute='class'>
       <NextNProgress color='#1A7C76' />
       <Header />
+      <Head>
+        <meta name='theme-color' content='#047857' />
+      </Head>
       <AnimatePresence mode='wait'>
         <motion.main
           key={router.route}
