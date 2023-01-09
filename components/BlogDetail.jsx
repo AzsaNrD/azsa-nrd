@@ -43,7 +43,7 @@ export default function BlogDetail({
         dangerouslySetInnerHTML={{ __html: content.html }}
         className='prose dark:prose-invert prose-emerald prose-sm md:prose-lg w-full overflow-hidden'
       />
-      <p className='mt-6 text-sm text-gray-500 dark:text-gray-300 italic md:text-right'>
+      <p className='mt-6 text-sm text-gray-500 dark:text-gray-300 md:text-right'>
         Terakhir diubah {convertDate(updatedAt)}
       </p>
     </article>
