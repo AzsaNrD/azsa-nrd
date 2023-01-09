@@ -4,8 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-ash-100 selection:bg-secondary selection:text-ash-100 overflow-x-hidden;
-    @apply dark:bg-[#121212];
+    @apply bg-ash-100 selection:bg-secondary selection:text-ash-100 overflow-hidden dark:bg-[#121212];
   }
 }
 
