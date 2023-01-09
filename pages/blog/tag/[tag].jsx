@@ -34,7 +34,6 @@ const QUERY = gql`
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { tag: 'general' } },
       { params: { tag: 'kampus' } },
       { params: { tag: 'gunadarma' } },
     ],
@@ -73,7 +72,7 @@ export default function Blog({ posts }) {
             The Blog
           </h1>
           {tag && (
-            <span className='text-lg bg-emerald-400 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-600 shadow px-4 py-[3px] rounded select-none'>
+            <span className='text-lg bg-emerald-400 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-500 shadow px-4 py-[3px] rounded select-none'>
               {tag}
             </span>
           )}
