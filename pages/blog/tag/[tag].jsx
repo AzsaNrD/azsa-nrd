@@ -69,9 +69,11 @@ export default function Blog({ posts }) {
       </Head>
       <div className='px-5 md:px-20 py-10 md:py-16'>
         <div className='mb-10 md:flex md:items-center md:gap-5'>
-          <h1 className='font-medium text-4xl text-ash-600 dark:text-gray-300 mb-2 md:mb-0'>The Blog</h1>
+          <h1 className='font-medium text-4xl text-ash-600 dark:text-gray-300 mb-4 md:mb-0'>
+            The Blog
+          </h1>
           {tag && (
-            <span className='text-lg bg-emerald-400 dark:bg-emerald-900 text-emerald-900 dark:text-emerald-500 shadow px-4 py-[2px] rounded select-none'>
+            <span className='text-lg bg-emerald-400 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-600 shadow px-4 py-[3px] rounded select-none'>
               {tag}
             </span>
           )}

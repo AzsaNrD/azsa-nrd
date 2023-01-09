@@ -49,20 +49,20 @@ export default function Home() {
         <section className='flex items-center justify-between'>
           <div className='flex gap-7 text-ash-600 dark:text-gray-200'>
             <a href='https://www.linkedin.com/in/azsa/' target='_blank' rel='noopener noreferrer'>
-              <SiLinkedin className='w-4 h-4 md:h-5 md:w-5' />
+              <SiLinkedin className='h-5 w-5' />
             </a>
             <a href='https://www.instagram.com/azsa_nrd/' target='_blank' rel='noopener noreferrer'>
-              <SiInstagram className='w-4 h-4 md:h-5 md:w-5' />
+              <SiInstagram className='h-5 w-5' />
             </a>
             <a href='https://github.com/AzsaNrD' target='_blank' rel='noopener noreferrer'>
-              <SiGithub className='w-4 h-4 md:h-5 md:w-5' />
+              <SiGithub className='h-5 w-5' />
             </a>
             <a
               href='https://discord.com/users/538126686231986176'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <SiDiscord className='w-4 h-4 md:h-5 md:w-5' />
+              <SiDiscord className='h-5 w-5' />
             </a>
           </div>
           <div>

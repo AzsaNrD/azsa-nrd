@@ -4,9 +4,18 @@ import { useState } from 'react';
 import { IoMenuSharp, IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
-const variants = {
-  open: { opacity: 1, y: '0' },
-  closed: { display: 'none', opacity: 0, y: '104%' },
+const show = {
+  opacity: 1,
+  x: '0%',
+  display: 'flex',
+};
+
+const hide = {
+  opacity: 0,
+  x: '105%',
+  transitionEnd: {
+    display: 'none',
+  },
 };
 
 export default function Navbar() {
@@ -54,8 +63,7 @@ export default function Navbar() {
       </button>
       <div className='md:hidden'>
         <motion.ul
-          animate={toggle ? 'open' : 'closed'}
-          variants={variants}
+          animate={toggle ? show : hide}
           transition={{ duration: 0.3 }}
           className='flex-col z-10 absolute left-0 right-0 mx-auto top-24 bg-ash-500 dark:bg-neutral-900 dark:border dark:border-neutral-800 shadow-2xl w-11/12 text-ash-100 py-7 rounded'
         >
