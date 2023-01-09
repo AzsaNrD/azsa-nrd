@@ -25,7 +25,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='px-5 md:px-20'>
-        <section className='flex flex-col md:flex-row gap-5 items-center justify-center h-[75vh]'>
+        <section className='flex flex-col md:flex-row gap-5 items-center justify-center h-[73vh] md:h-[75vh]'>
           <Image
             src={Profile}
             priority='high'
