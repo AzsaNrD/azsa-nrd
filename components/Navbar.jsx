@@ -5,8 +5,8 @@ import { IoMenuSharp, IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
 const variants = {
-  open: { opacity: 1, x: '0' },
-  closed: { opacity: 0, x: '104%' },
+  open: { opacity: 1, y: '0' },
+  closed: { display: 'none', opacity: 0, y: '104%' },
 };
 
 export default function Navbar() {
