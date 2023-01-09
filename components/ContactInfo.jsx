@@ -2,7 +2,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 export default function ContactInfo() {
   return (
-    <section className='divide-y-[1px] divide-ash-300 w-full md:max-w-md mt-0 md:mt-16'>
+    <section className='divide-y-[1px] divide-ash-300 w-full lg:max-w-md mt-0 md:mt-16'>
       <div className='py-5'>
         <div className='flex items-center gap-3'>
           <FaEnvelope className='w-7 h-7 text-secondary dark:text-emerald-600' />

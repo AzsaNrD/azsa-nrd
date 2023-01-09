@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className={spaceGrotesk.className}
+          className={`${spaceGrotesk.className} overflow-hidden`}
         >
           <Component {...pageProps} />
         </motion.main>

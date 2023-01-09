@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { IoMenuSharp, IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
-import styles from '../styles/header.module.css';
-
 const variants = {
   open: { opacity: 1, x: '0' },
   closed: { opacity: 0, x: '104%' },
@@ -20,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='select-none'>
+    <nav className='select-none overflow-hidden'>
       <ul className='md:flex gap-6 hidden'>
         <li
           className={`relative after:absolute after:rounded-full after:content-[''] after:w-full ${
