@@ -9,7 +9,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function Header() {
   return (
     <header
-      className={`${spaceGrotesk.className} flex items-center justify-between px-5 md:px-20 py-10 text-ash-600 dark:text-gray-200 relative z-50`}
+      className={`${spaceGrotesk.className} flex items-center justify-between px-5 md:px-20 py-10 text-ash-600 dark:text-gray-200 relative z-10`}
     >
       <Link href='/' className='font-bold text-2xl select-none uppercase'>
         azsa-nrd

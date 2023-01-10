@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='select-none overflow-hidden'>
+    <nav className='select-none'>
       <ul className='md:flex gap-6 hidden'>
         <li
           className={`relative after:absolute after:rounded-full after:content-[''] after:w-full after:bg-ash-500 dark:after:bg-gray-200 after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
