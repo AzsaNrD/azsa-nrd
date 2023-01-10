@@ -20,7 +20,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='px-5 md:px-20 absolute top-0 left-0 right-0 h-screen'>
+      <div className='px-5 md:px-20 relative top-0 left-0 right-0 h-[calc(100vh-112px)]'>
         <div className='flex flex-col justify-end h-full'>
           <div className='mb-[24vh] md:mb-[30vh]'>
             <MyProfile />
