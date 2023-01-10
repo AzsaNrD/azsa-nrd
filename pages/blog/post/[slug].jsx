@@ -68,7 +68,7 @@ export default function BlogPosts({ post }) {
   return (
     <>
       <Head>
-        <title>azsa-nrd | {post?.title || 'blog'}</title>
+        <title>azsa-nrd | blog</title>
         <meta name='description' content={post?.content?.text} />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>

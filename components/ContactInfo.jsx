@@ -36,7 +36,9 @@ export default function ContactInfo() {
           <FaMapMarkerAlt className='w-7 h-7 text-secondary dark:text-emerald-600' />
           <h4 className='text-ash-600 dark:text-gray-300 text-xl'>Address</h4>
         </div>
-        <p className='text-secondary dark:text-emerald-600 pt-5 font-light'>Depok, West Java, Indonesia</p>
+        <p className='text-secondary dark:text-emerald-600 pt-5 font-light'>
+          Depok, West Java, Indonesia
+        </p>
       </div>
     </section>
   );

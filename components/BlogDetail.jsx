@@ -16,7 +16,11 @@ export default function BlogDetail({
       <div>
         <div className='mb-4 text-sm md:text-base flex gap-4'>
           {tags.map((tag) => (
-            <Link key={tag} href={`/blog/tag/${tag}`} className='text-secondary dark:text-emerald-500'>
+            <Link
+              key={tag}
+              href={`/blog/tag/${tag}`}
+              className='text-secondary dark:text-emerald-500'
+            >
               {tag}
             </Link>
           ))}

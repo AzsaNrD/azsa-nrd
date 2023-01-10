@@ -13,15 +13,23 @@ export default function BlogCard({ slug, tags, title, createdAt, coverPhoto }) {
       <div className='mt-5'>
         <div className='flex gap-2 text-ash-400 dark:text-neutral-400 capitalize'>
           {tags.map((tag) => (
-            <Link key={tag} href={`/blog/tag/${tag}`} className='hover:text-secondary dark:hover:text-emerald-500 text-sm md:text-base'>
+            <Link
+              key={tag}
+              href={`/blog/tag/${tag}`}
+              className='hover:text-secondary dark:hover:text-emerald-500 text-sm md:text-base'
+            >
               {tag}
             </Link>
           ))}
         </div>
         <Link href={`/blog/post/${slug}`}>
-          <h2 className='my-2 font-medium text-xl md:text-2xl capitalize hover:underline'>{title}</h2>
+          <h2 className='my-2 font-medium text-xl md:text-2xl capitalize hover:underline'>
+            {title}
+          </h2>
         </Link>
-        <p className='text-ash-300 dark:text-neutral-500 text-sm md:text-base'>{convertDate(createdAt)}</p>
+        <p className='text-ash-300 dark:text-neutral-500 text-sm md:text-base'>
+          {convertDate(createdAt)}
+        </p>
       </div>
     </article>
   );

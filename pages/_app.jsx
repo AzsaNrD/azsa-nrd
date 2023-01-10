@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function App({ Component, pageProps }) {
   const { theme } = useTheme();
-  
+
   const router = useRouter();
   return (
     <ThemeProvider enableSystem={true} attribute='class'>

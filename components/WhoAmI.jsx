@@ -2,7 +2,9 @@ export default function WhoAmI() {
   return (
     <section className='flex justify-center items-center px-5 md:px-20 py-10 md:py-16'>
       <div className='max-w-5xl'>
-        <h2 className='text-ash-600 dark:text-gray-200 font-medium text-4xl md:text-center'>Who am i?</h2>
+        <h2 className='text-ash-600 dark:text-gray-200 font-medium text-4xl md:text-center'>
+          Who am i?
+        </h2>
         <p className='text-ash-500 dark:text-gray-300 font-light mt-2'>
           Hello, my name is Azsa Nurwahyudi, i&#39;m 18 years old, i&#39;m a student at
           <a

@@ -33,10 +33,7 @@ const QUERY = gql`
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { tag: 'kampus' } },
-      { params: { tag: 'gunadarma' } },
-    ],
+    paths: [{ params: { tag: 'kampus' } }, { params: { tag: 'gunadarma' } }],
     fallback: false,
   };
 }
