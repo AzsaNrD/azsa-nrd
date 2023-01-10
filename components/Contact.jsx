@@ -5,19 +5,35 @@ export default function Contact() {
   return (
     <section className='flex items-center justify-between'>
       <div className='flex gap-7 text-ash-600 dark:text-gray-200'>
-        <a href='https://www.linkedin.com/in/azsa/' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://www.linkedin.com/in/azsa/'
+          target='_blank'
+          rel='noopener noreferrer'
+          title='LinkedIn'
+        >
           <SiLinkedin className='h-5 w-5' />
         </a>
-        <a href='https://www.instagram.com/azsa_nrd/' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://www.instagram.com/azsa_nrd/'
+          target='_blank'
+          rel='noopener noreferrer'
+          title='Instagram'
+        >
           <SiInstagram className='h-5 w-5' />
         </a>
-        <a href='https://github.com/AzsaNrD' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://github.com/AzsaNrD'
+          target='_blank'
+          rel='noopener noreferrer'
+          title='Github'
+        >
           <SiGithub className='h-5 w-5' />
         </a>
         <a
           href='https://discord.com/users/538126686231986176'
           target='_blank'
           rel='noopener noreferrer'
+          title='Discord'
         >
           <SiDiscord className='h-5 w-5' />
         </a>
