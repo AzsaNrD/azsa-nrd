@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link href='/blog'>blog</Link>
         </li>
       </ul>
-      <button className='md:hidden text-2xl flex' onClick={onToggle}>
+      <button type='button' className='md:hidden text-2xl flex' onClick={onToggle}>
         {toggle ? <IoCloseSharp /> : <IoMenuSharp />}
       </button>
       <div className='md:hidden'>
