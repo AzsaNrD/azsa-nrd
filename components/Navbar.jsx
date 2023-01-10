@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { IoMenuSharp, IoCloseSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
@@ -19,7 +18,6 @@ const hide = {
 };
 
 export default function Navbar() {
-  const { theme } = useTheme();
   const [toggle, setToggle] = useState(false);
 
   const onToggle = () => {
@@ -30,30 +28,22 @@ export default function Navbar() {
     <nav className='select-none overflow-hidden'>
       <ul className='md:flex gap-6 hidden'>
         <li
-          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full ${
-            theme === 'light' ? 'after:bg-ash-500' : 'after:bg-gray-200'
-          } after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
+          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full after:bg-ash-500 dark:after:bg-gray-200 after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
         >
           <Link href='/'>home</Link>
         </li>
         <li
-          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full ${
-            theme === 'light' ? 'after:bg-ash-500' : 'after:bg-gray-200'
-          } after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
+          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full after:bg-ash-500 dark:after:bg-gray-200 after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
         >
           <Link href='/about'>about</Link>
         </li>
         <li
-          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full ${
-            theme === 'light' ? 'after:bg-ash-500' : 'after:bg-gray-200'
-          } after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
+          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full after:bg-ash-500 dark:after:bg-gray-200 after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
         >
           <Link href='/contact'>contact</Link>
         </li>
         <li
-          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full ${
-            theme === 'light' ? 'after:bg-ash-500' : 'after:bg-gray-200'
-          } after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
+          className={`relative after:absolute after:rounded-full after:content-[''] after:w-full after:bg-ash-500 dark:after:bg-gray-200 after:opacity-80 after:h-[0.15rem] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[.3] after:transition-transform after:duration-500`}
         >
           <Link href='/blog'>blog</Link>
         </li>
