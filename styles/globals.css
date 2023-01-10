@@ -3,8 +3,11 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
+  html {
+    @apply overflow-x-hidden h-full w-full;
+  }
   body {
-    @apply bg-ash-100 selection:bg-secondary selection:text-ash-100 overflow-x-hidden dark:bg-[#121212];
+    @apply bg-ash-100 selection:bg-secondary selection:text-ash-100 overflow-x-hidden relative dark:bg-[#121212] h-full w-full;
   }
 }
 
