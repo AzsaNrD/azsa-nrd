@@ -15,8 +15,7 @@ export default function WhoAmI() {
           >
             Gunadarma University
           </a>
-          , majoring in Information Sytem. I have a strong interest in web development and have been
-          learning about it since 2019. I started with
+          , majoring in Information Sytem. I have a strong interest in web development. I started with
           <a
             className='pl-1 text-secondary dark:text-emerald-500 hover:underline'
             href='https://www.w3schools.com/html/html_intro.asp'
