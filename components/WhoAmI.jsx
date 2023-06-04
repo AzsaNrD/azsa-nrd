@@ -1,3 +1,5 @@
+import { getAge } from '../utils/getAge';
+
 export default function WhoAmI() {
   return (
     <section className='flex justify-center items-center px-5 md:px-20 py-10 md:py-16'>
@@ -6,7 +8,7 @@ export default function WhoAmI() {
           Who am i?
         </h2>
         <p className='text-ash-500 dark:text-gray-300 font-light mt-2'>
-          Hello, my name is Azsa Nurwahyudi, i&#39;m 18 years old, i&#39;m a student at
+          Hello, my name is Azsa Nurwahyudi, i&#39;m {getAge()} years old, i&#39;m a student at
           <a
             className='pl-1 text-secondary dark:text-emerald-500 hover:underline'
             href='https://www.gunadarma.ac.id/'
